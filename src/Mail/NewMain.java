@@ -45,7 +45,7 @@ public class NewMain {
 
 // SMTP server information
 
-        String mailTo = "misofertasretail@gmail.com,csalgadolizana@gmail.com";
+        String mailTo = "misofertasretail@gmail.com";
         String subject = "Visita nuestra oferta haciendo click en la imagen";
 
         // message contains HTML markups
@@ -66,7 +66,7 @@ public class NewMain {
         sendHtmlEmail mailer = new sendHtmlEmail();
 
         try {
-            mailer.sendHtmlEmail("host", "587", "misofertasretail@gmail.com", "qbcymakunmleqiqq", mailTo,
+            mailer.sendHtmlEmail("smtp.gmail.com", "587", "misofertasretail@gmail.com", "qbcymakunmleqiqq", mailTo,
                     subject, message);
             System.out.println("Email sent.");
             System.err.println("chinga");
